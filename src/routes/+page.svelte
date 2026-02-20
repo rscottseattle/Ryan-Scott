@@ -108,7 +108,29 @@
 				<span class="text-[#a3a3a3] dark:text-[#525252] text-lg leading-none transition-transform duration-300 group-open:rotate-45">+</span>
 			</summary>
 			<div class="accordion-content pb-8 text-[#737373] dark:text-[#999999] leading-relaxed">
-				<p>A few books and resources that have shaped my thinking — coming soon.</p>
+				<p class="mb-4">A few books that have shaped my thinking:</p>
+				<ul class="space-y-3">
+					<li>
+						<a href="https://www.amazon.com/Power-Habit-What-Life-Business/dp/B0FD49GYHN/" target="_blank" rel="noopener noreferrer" class="link-underline text-[#1a1a1a] dark:text-[#ededed]">The Power of Habit</a>
+						<span class="text-sm"> — Charles Duhigg</span>
+					</li>
+					<li>
+						<a href="https://www.amazon.com/Atomic-Habits-James-Clear-audiobook/dp/B07RFSSYBH/" target="_blank" rel="noopener noreferrer" class="link-underline text-[#1a1a1a] dark:text-[#ededed]">Atomic Habits</a>
+						<span class="text-sm"> — James Clear</span>
+					</li>
+					<li>
+						<a href="https://www.amazon.com/Fourth-Preacher-Doug-Ellingsworth-ebook/dp/B0D82D4JB7" target="_blank" rel="noopener noreferrer" class="link-underline text-[#1a1a1a] dark:text-[#ededed]">The Fourth Preacher</a>
+						<span class="text-sm"> — Doug Ellingsworth</span>
+					</li>
+					<li>
+						<a href="https://www.amazon.com/Shechem-covenant-story-Abraham-Isaac-ebook/dp/B0CQTDLQPB" target="_blank" rel="noopener noreferrer" class="link-underline text-[#1a1a1a] dark:text-[#ededed]">Shechem: A Covenant Story of Abraham and Isaac</a>
+						<span class="text-sm"> — Doug Ellingsworth</span>
+					</li>
+					<li>
+						<a href="https://www.amazon.com/History-Development-Doctrine-Trinity/dp/0578359464" target="_blank" rel="noopener noreferrer" class="link-underline text-[#1a1a1a] dark:text-[#ededed]">The History and Development of the Doctrine of the Trinity</a>
+						<span class="text-sm"> — Doug Ellingsworth</span>
+					</li>
+				</ul>
 			</div>
 		</details>
 
