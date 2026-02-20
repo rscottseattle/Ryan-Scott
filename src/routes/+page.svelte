@@ -133,10 +133,10 @@
 				<p>Thirteen years later, I can confirm — it was crazy. And worth every minute.</p>
 
 				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">I'm Famous</h4>
-				<p>I'm known as Brittani Scott's husband.</p>
+				<p>I'm known as <a href="https://www.brittaniscott.com/" target="_blank" rel="noopener noreferrer" class="link-underline">Brittani Scott</a>'s husband.</p>
 
 				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">My Family</h4>
-				<p>I'm a husband to Brittani Scott — singer, songwriter, recording artist, and worship leader. She's the talented one. I just married well.</p>
+				<p>I'm a husband to <a href="https://www.brittaniscott.com/" target="_blank" rel="noopener noreferrer" class="link-underline">Brittani Scott</a> — singer, songwriter, recording artist, and worship leader. She's the talented one. I just married well.</p>
 				<p>We have two little girls: Asha and Yerrin. They are my pride and joy and the reason I drink coffee.</p>
 
 				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">Motivation</h4>
