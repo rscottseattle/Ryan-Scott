@@ -124,11 +124,11 @@
 					</li>
 					<li>
 						<a href="https://www.amazon.com/Shechem-covenant-story-Abraham-Isaac-ebook/dp/B0CQTDLQPB" target="_blank" rel="noopener noreferrer" class="link-underline text-[#1a1a1a] dark:text-[#ededed]">Shechem: A Covenant Story of Abraham and Isaac</a>
-						<span class="text-sm"> — Doug Ellingsworth</span>
+						<span class="text-sm"> — Jana Jackson</span>
 					</li>
 					<li>
 						<a href="https://www.amazon.com/History-Development-Doctrine-Trinity/dp/0578359464" target="_blank" rel="noopener noreferrer" class="link-underline text-[#1a1a1a] dark:text-[#ededed]">The History and Development of the Doctrine of the Trinity</a>
-						<span class="text-sm"> — Doug Ellingsworth</span>
+						<span class="text-sm"> — Steven N. Gill</span>
 					</li>
 				</ul>
 			</div>
