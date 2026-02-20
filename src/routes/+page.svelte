@@ -128,9 +128,32 @@
 				More About Me
 				<span class="text-[#a3a3a3] dark:text-[#525252] text-lg leading-none transition-transform duration-300 group-open:rotate-45">+</span>
 			</summary>
-			<div class="accordion-content pb-8 text-[#737373] dark:text-[#999999] leading-relaxed">
-				<p class="mb-3">Based in Seattle. I'm a preacher, author, and consultant who believes technology should serve people, not the other way around.</p>
-				<p>When I'm not working, you'll find me spending time with family, reading, or exploring the Pacific Northwest.</p>
+			<div class="accordion-content pb-8 text-[#737373] dark:text-[#999999] leading-relaxed space-y-6">
+				<p>I was born and raised in Holdenville, Oklahoma — a small town that teaches you big things about people. From there, I went to Jackson College of Ministries in Jackson, Mississippi, where I studied the Word and figured out what I wanted to do with my life. After graduating, I taught at Texas Bible College, then my wife and I did the thing everyone tells you is crazy: we planted a church in Seattle, Washington.</p>
+				<p>Thirteen years later, I can confirm — it was crazy. And worth every minute.</p>
+
+				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">I'm Famous</h4>
+				<p>I'm known as Brittani Scott's husband.</p>
+
+				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">My Family</h4>
+				<p>I'm a husband to Brittani Scott — singer, songwriter, recording artist, and worship leader. She's the talented one. I just married well.</p>
+				<p>We have two little girls: Asha and Yerrin. They are my pride and joy and the reason I drink coffee.</p>
+
+				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">Motivation</h4>
+				<p>I believe every minister on the planet is called to reach the world. Not just their corner of it — the whole thing.</p>
+				<p>Church planting should be at the heart of that mission. Going to unchurched areas. Bringing the gospel to places that don't have it yet. That's the work.</p>
+				<p>I'm obsessed with the <em>methods</em> — the strategies, the systems, the creative ways we plant the seed of the gospel. Technology. One-on-one conversations. Home Bible studies. Whatever it takes to get the message where it needs to go.</p>
+				<p>The tools change. The mission doesn't.</p>
+
+				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">Goals</h4>
+				<p>Life has us in South Dakota right now, helping with ministry here as we transition away from Seattle. We're not entirely sure where the road takes us next — and honestly, that's kind of exciting.</p>
+				<p>What I do know: we want to pastor a church again. And wherever we land, we'll be planting works in unreached communities within reach. That's non-negotiable.</p>
+
+				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">What I Do for Fun</h4>
+				<p>I'm a technology nerd. Gadgets, entrepreneurship, the cutting edge of AI and its impact on our work — that's my version of relaxation. I love learning about marketing strategy the way some people love fantasy football.</p>
+				<p>I also scuba dive. I'm a Kansas City Chiefs fan. I collect journals (yes, physical ones — there's something about a blank page).</p>
+				<p>Teaching is genuinely a hobby for me. I love the creative work of publishing — writing, video, audio. I love the whole process of making something and putting it into the world.</p>
+				<p>I love music of all kinds. And as much as time allows, I like to golf. I didn't say I was <em>good</em> at it.</p>
 			</div>
 		</details>
 	</section>
