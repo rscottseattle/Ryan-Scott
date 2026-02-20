@@ -5,8 +5,17 @@
 </script>
 
 <a
-	class="hidden rounded-lg p-1 text-gray-800 transition-all hover:bg-gray-200 dark:text-gray-200 dark:hover:bg-gray-800 sm:px-3 sm:py-2 md:inline-block"
-	class:font-semibold={isActive}
+	class="hidden rounded-lg p-1 text-sm text-[#737373] transition-colors hover:text-[#1a1a1a] dark:text-[#999999] dark:hover:text-[#ffffff] sm:px-3 sm:py-2 md:inline-block"
+	class:active={isActive}
 	{href}
 	><span class="capsize"><slot /> </span>
 </a>
+
+<style>
+	.active {
+		color: #1a1a1a;
+	}
+	:global(.dark) .active {
+		color: #ededed;
+	}
+</style>

@@ -1,6 +1,5 @@
 <script>
 	import { MY_TWITTER_HANDLE, SITE_URL } from '$lib/siteConfig';
-	// import Comments from '../../components/Comments.svelte';
 
 	import 'prism-themes/themes/prism-shades-of-purple.min.css';
 	import Newsletter from '../../components/Newsletter.svelte';
@@ -8,15 +7,11 @@
 	import LatestPosts from '../../components/LatestPosts.svelte';
 	import { page } from '$app/stores';
 
-
-	// https://svelte-put.vnphanquang.com/docs/toc
-  import { toc, createTocStore } from '@svelte-put/toc';
+	import { toc, createTocStore } from '@svelte-put/toc';
 	import TableOfContents from './TableOfContents.svelte';
 	import utterances, {injectScript}  from './loadUtterances'
 
-	// table of contennts
-  const tocStore = createTocStore();
-
+	const tocStore = createTocStore();
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -47,7 +42,6 @@
 
 <svelte:head>
 	<title>{json.title}</title>
-
 	<link rel="canonical" href={canonical} />
 	<meta property="og:url" content={canonical} />
 	<meta property="og:type" content="article" />
@@ -70,57 +64,57 @@
 <TableOfContents {tocStore} />
 
 <article use:toc={{ store: tocStore, anchor: false, observe: true, selector: ':where(h1, h2, h3)' }} class="items-start justify-center w-full mx-auto mt-16 mb-32 prose swyxcontent dark:prose-invert max-w-none">
-	<h1 class="md:text-center mb-8 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl ">
+	<h1 class="md:text-center mb-8 text-3xl font-bold tracking-tight text-[#1a1a1a] dark:text-[#ededed] md:text-5xl ">
 		{json.title}
 	</h1>
 	<div
-		class="flex justify-between w-full mt-2 bg border-gray-600 sm:items-start md:flex-row md:items-center"
+		class="flex justify-between w-full mt-2 sm:items-start md:flex-row md:items-center"
 	>
-		<span class="flex items-center text-sm text-gray-700 dark:text-gray-300 gap-2">
+		<span class="flex items-center text-sm text-[#737373] dark:text-[#999999] gap-2">
 			{#if json.authorAvatarUrl}
 				<img src={json.authorAvatarUrl} class="w-6 m-0" alt="Author avatar" />
 			{/if}
 			{json.author}</span>
-		<span class="flex items-center text-sm text-gray-600 dark:text-gray-400">
+		<span class="flex items-center text-sm text-[#a3a3a3] dark:text-[#525252]">
 			<a href={json.ghMetadata.issueUrl} rel="external noreferrer" class="no-underline" target="_blank">
 				{new Date(json.date).toISOString().slice(0, 10)}
 			</a>
 		</span>
 	</div>
 	<div
-		class="-mx-4 my-2 flex h-1 w-[100vw] bg-gradient-to-r from-gray-700 via-gray-500 to-gray-700 sm:mx-0 sm:w-full"
+		class="-mx-4 my-2 flex h-px w-[100vw] bg-[#e5e5e5] dark:bg-[#1f1f1f] sm:mx-0 sm:w-full"
 	/>
 	{@html json.content}
 </article>
 
 <div class="max-w-2xl mx-auto">
 	{#if json?.tags?.length}
-		<p class="!text-slate-400 flex-auto mb-4 italic">
+		<p class="text-[#a3a3a3] dark:text-[#525252] flex-auto mb-4 italic text-sm">
 			Tagged in:
 			{#each json.tags as tag}
 				<span class="px-1">
-					<a href={`/blog?filter=hashtag-${tag}`}>#{tag}</a>
+					<a href={`/blog?filter=hashtag-${tag}`} class="link-underline">#{tag}</a>
 				</span>
 			{/each}
 		</p>
 	{/if}
-	<div class="max-w-full p-4 mb-12 prose border-t border-b border-gray-600 dark:prose-invert">
+	<div class="max-w-full p-4 mb-12 prose border-t border-b border-[#e5e5e5] dark:border-[#1f1f1f] dark:prose-invert">
 		{#if json.ghMetadata.reactions.total_count > 0}
 			Reactions: <Reactions
 				issueUrl={json.ghMetadata.issueUrl}
 				reactions={json.ghMetadata.reactions}
 			/>
 		{:else}
-			<a href={json.ghMetadata.issueUrl}>Leave a reaction </a>
+			<a href={json.ghMetadata.issueUrl} class="link-underline">Leave a reaction </a>
 			if you liked this post!
 		{/if}
 	</div>
-	<div class="mb-8 text-black dark:text-white " bind:this={commentsEl} use:utterances={{number: issueNumber}}>
+	<div class="mb-8 text-[#1a1a1a] dark:text-[#ededed]" bind:this={commentsEl} use:utterances={{number: issueNumber}}>
 		Loading comments...
-		<button class="my-4 bg-gray-200 hover:bg-gray-100 text-black dark:bg-gray-700 dark:hover:bg-gray-600 dark:text-white p-2 rounded-lg"
+		<button class="my-4 border border-[#e5e5e5] dark:border-[#1f1f1f] px-4 py-2 text-sm text-[#1a1a1a] dark:text-[#ededed] rounded transition-colors hover:bg-[#1a1a1a] hover:text-[#ededed] dark:hover:bg-[#ededed] dark:hover:text-[#0a0a0a]"
 			on:click={() => injectScript(commentsEl, issueNumber)}
 			on:mouseover={() => injectScript(commentsEl, issueNumber)}
-		>Load now</button>
+		>Load comments</button>
 	</div>
 
 	<Newsletter />
@@ -128,7 +122,6 @@
 </div>
 
 <style>
-	/* https://ryanmulligan.dev/blog/layout-breakouts/ */
 		.swyxcontent {
 			--gap: clamp(1rem, 6vw, 3rem);
 			--full: minmax(var(--gap), 1fr);
@@ -170,7 +163,6 @@
 		margin-right: -1rem;
 	}
 
-	/* hacky thing because otherwise the summary>pre causes overflow */
 	article :global(summary > pre) {
 		max-width: 90vw;
 	}
@@ -187,10 +179,9 @@
 	}
 
 	article :global(.admonition) {
-		@apply p-8 border-4 border-gray-500;
+		@apply p-8 border border-[#e5e5e5] dark:border-[#1f1f1f];
 	}
 
-	/* fix github codefence diff styling from our chosen prismjs theme */
 	article :global(.token.inserted) {
 		background: #00ff0044;
 	}

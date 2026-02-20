@@ -68,11 +68,11 @@
 <svelte:window on:keyup={focusSearch} />
 
 <section class="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center px-4 sm:px-8">
-	<h1 class="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-		{SITE_TITLE} Blog
+	<h1 class="mb-4 text-3xl font-bold tracking-tight text-[#1a1a1a] dark:text-[#ededed] md:text-5xl">
+		Blog
 	</h1>
-	<p class="mb-4 text-gray-600 dark:text-gray-400">
-		Thoughts on faith, marketing, AI, and building with purpose. In total, I've written {items.length} articles. Use the search below to filter by title.
+	<p class="mb-4 text-[#737373] dark:text-[#999999]">
+		Thoughts on faith, marketing, AI, and building with purpose. {items.length} articles and counting.
 	</p>
 	<div class="relative mb-4 w-full">
 		<input
@@ -82,9 +82,9 @@
 			bind:this={inputEl}
 			on:focus={loadsearchFn}
 			placeholder="Hit / to search"
-			class="block w-full rounded-md border border-gray-200 bg-white px-4 py-2 text-gray-900 focus:border-gray-500 focus:ring-gray-500 dark:border-gray-900 dark:bg-gray-800 dark:text-gray-100"
+			class="block w-full rounded-md border border-[#e5e5e5] dark:border-[#1f1f1f] bg-transparent px-4 py-2 text-[#1a1a1a] dark:text-[#ededed] focus:border-[#737373] focus:ring-0 focus:outline-none"
 		/><svg
-			class="absolute right-3 top-3 h-5 w-5 text-gray-400 dark:text-gray-300"
+			class="absolute right-3 top-3 h-5 w-5 text-[#a3a3a3] dark:text-[#525252]"
 			xmlns="http://www.w3.org/2000/svg"
 			fill="none"
 			viewBox="0 0 24 24"
@@ -100,8 +100,8 @@
 
 	{#if POST_CATEGORIES.length > 1}
 		<div class="mt-2 mb-8 flex items-center">
-			<div class="mr-2 text-gray-900 dark:text-gray-400">Filter:</div>
-			<div class="grid grid-cols-2 rounded-md shadow-sm sm:grid-cols-2">
+			<div class="mr-2 text-[#737373] dark:text-[#999999] text-sm">Filter:</div>
+			<div class="grid grid-cols-2 rounded-md sm:grid-cols-2">
 				{#each POST_CATEGORIES as availableCategory}
 					<div>
 						<input
@@ -113,7 +113,7 @@
 						/>
 						<label
 							for="category-{availableCategory}"
-							class="inline-flex w-full cursor-pointer items-center justify-between border border-gray-200 bg-white px-4 py-2 text-gray-500 hover:bg-gray-100 hover:text-gray-600 peer-checked:border-white peer-checked:text-white dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-300 dark:peer-checked:border-gray-300 dark:peer-checked:text-gray-200"
+							class="inline-flex w-full cursor-pointer items-center justify-between border border-[#e5e5e5] dark:border-[#1f1f1f] px-4 py-2 text-sm text-[#737373] dark:text-[#999999] hover:text-[#1a1a1a] dark:hover:text-[#ededed] peer-checked:border-[#1a1a1a] peer-checked:text-[#1a1a1a] dark:peer-checked:border-[#ededed] dark:peer-checked:text-[#ededed] transition-colors"
 						>
 							{availableCategory}
 						</label>
@@ -125,7 +125,7 @@
 
 	{#if !$search && !$selectedCategories?.length}
 		<MostPopular />
-		<h3 class="mt-8 mb-4 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
+		<h3 class="mt-8 mb-4 text-2xl font-bold tracking-tight text-[#1a1a1a] dark:text-[#ededed] md:text-4xl">
 			All Posts
 		</h3>
 	{/if}
@@ -156,19 +156,19 @@
 			<div class="flex justify-center">
 				<button
 					on:click={() => (isTruncated = false)}
-					class="inline-block rounded bg-gray-100 p-4 text-lg font-bold tracking-tight text-black hover:text-gray-600 dark:bg-gray-800 dark:text-white hover:dark:text-gray-300 md:text-2xl"
+					class="inline-block border border-[#e5e5e5] dark:border-[#1f1f1f] rounded px-6 py-3 text-sm text-[#1a1a1a] dark:text-[#ededed] transition-colors hover:bg-[#1a1a1a] hover:text-[#ededed] dark:hover:bg-[#ededed] dark:hover:text-[#0a0a0a]"
 				>
-					Load More Posts...
+					Load More Posts
 				</button>
 			</div>
 		{/if}
 	{:else if $search}
-		<div class="prose dark:prose-invert">
+		<div class="text-[#737373] dark:text-[#999999]">
 			No posts found for
-			<code>{$search}</code>.
+			<code class="text-[#1a1a1a] dark:text-[#ededed]">{$search}</code>.
 		</div>
-		<button class="bg-slate-500 p-2" on:click={() => ($search = '')}>Clear your search</button>
+		<button class="mt-2 border border-[#e5e5e5] dark:border-[#1f1f1f] px-4 py-2 text-sm transition-colors hover:bg-[#1a1a1a] hover:text-[#ededed]" on:click={() => ($search = '')}>Clear search</button>
 	{:else}
-		<div class="prose dark:prose-invert">No blogposts found!</div>
+		<div class="text-[#737373] dark:text-[#999999]">No blogposts found.</div>
 	{/if}
 </section>

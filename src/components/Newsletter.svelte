@@ -1,5 +1,4 @@
 <script>
-	// https://rodneylab.com/using-local-storage-sveltekit/
 	import { browser } from '$app/environment';
 	import { writable } from 'svelte/store';
 
@@ -23,20 +22,20 @@
 
 <section class="mb-16 w-full" id="newsletter">
 	<div
-		class="my-4 w-full border-y border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800 sm:rounded sm:border-x"
+		class="my-4 w-full border border-[#e5e5e5] dark:border-[#1f1f1f] p-6 sm:rounded"
 	>
-		<div class="flex items-center justify-between space-x-4 text-gray-900 dark:text-gray-100">
-			<p class="text-lg font-bold md:text-xl">Subscribe to the newsletter</p>
+		<div class="flex items-center justify-between space-x-4 text-[#1a1a1a] dark:text-[#ededed]">
+			<p class="text-lg font-bold">Subscribe to the newsletter</p>
 
 			<button
 				aria-label="Toggle Newsletter CTA"
-				class="flex h-9 w-9  items-center justify-center rounded-lg ring-gray-300 transition-all hover:ring-2"
+				class="flex h-9 w-9 items-center justify-center rounded-full border border-[#e5e5e5] dark:border-[#1f1f1f] transition-all hover:border-[#1a1a1a] dark:hover:border-[#ededed]"
 				on:click={toggleNewsletter}
 			>
 				{#if isNewsletterOpen}
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5"
+						class="h-4 w-4"
 						viewBox="0 0 20 20"
 						fill="currentColor"
 					>
@@ -49,7 +48,7 @@
 				{:else}
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
-						class="h-5 w-5"
+						class="h-4 w-4"
 						viewBox="0 0 20 20"
 						fill="currentColor"
 					>
@@ -63,8 +62,8 @@
 			</button>
 		</div>
 		{#if isNewsletterOpen}
-			<p class="my-1 text-gray-800 dark:text-gray-200">
-				Get emails from me about <span class="font-bold"
+			<p class="my-1 text-[#737373] dark:text-[#999999]">
+				Get emails from me about <span class="font-semibold text-[#1a1a1a] dark:text-[#ededed]"
 					>faith, marketing, and building with purpose</span
 				>.
 			</p>
@@ -84,9 +83,9 @@
 					placeholder="you@example.com"
 					autocomplete="email"
 					required={true}
-					class="mt-1 block w-full rounded-md border-gray-300 bg-white px-4 py-2 pr-32 text-gray-900 focus:border-gray-500 focus:ring-gray-500 dark:bg-gray-800 dark:text-gray-100"
+					class="mt-1 block w-full rounded-md border border-[#e5e5e5] dark:border-[#1f1f1f] bg-transparent px-4 py-2 pr-32 text-[#1a1a1a] dark:text-[#ededed] focus:border-[#737373] focus:ring-0 focus:outline-none"
 				/><button
-					class="absolute right-1 top-1 flex h-8 w-28 items-center justify-center rounded bg-gray-100 px-4 pt-1 font-medium text-gray-900 dark:bg-gray-700 dark:text-gray-100"
+					class="absolute right-1 top-1 flex h-8 w-28 items-center justify-center rounded border border-[#e5e5e5] dark:border-[#1f1f1f] px-4 pt-1 font-medium text-[#1a1a1a] dark:text-[#ededed] transition-colors hover:bg-[#1a1a1a] hover:text-[#ededed] dark:hover:bg-[#ededed] dark:hover:text-[#0a0a0a]"
 					type="submit">Subscribe</button
 				>
 			</form>

@@ -23,7 +23,7 @@
 	>
 		{#if !isOpen}
 			<svg
-				class="absolute h-5 w-5 text-gray-900 dark:text-gray-100"
+				class="absolute h-5 w-5 text-[#1a1a1a] dark:text-[#ededed]"
 				width="20"
 				height="20"
 				viewBox="0 0 20 20"
@@ -44,7 +44,7 @@
 			>
 		{:else}
 			<svg
-				class="absolute h-5 w-5 text-gray-900 dark:text-gray-100"
+				class="absolute h-5 w-5 text-[#1a1a1a] dark:text-[#ededed]"
 				viewBox="0 0 24 24"
 				width="24"
 				height="24"
@@ -60,11 +60,11 @@
 	</button>
 	{#if isOpen}
 		<ul
-			class="menu absolute flex flex-col bg-gray-50 text-2xl  uppercase dark:bg-gray-900"
+			class="menu absolute flex flex-col bg-[#f5f5f0] text-2xl uppercase dark:bg-[#0a0a0a]"
 			class:menuRendered={isMenuRendered}
 		>
 			<li
-				class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
+				class="border-b border-[#e5e5e5] font-semibold text-[#1a1a1a] dark:border-[#1f1f1f] dark:text-[#ededed]"
 				style="transition-delay: 150ms;"
 			>
 				<a
@@ -74,7 +74,7 @@
 				>
 			</li>
 			<li
-				class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
+				class="border-b border-[#e5e5e5] font-semibold text-[#1a1a1a] dark:border-[#1f1f1f] dark:text-[#ededed]"
 				style="transition-delay: 250ms;"
 			>
 				<a
@@ -84,7 +84,7 @@
 				>
 			</li>
 			<li
-				class="border-b border-gray-300 font-semibold text-gray-900 dark:border-gray-700 dark:text-gray-100"
+				class="border-b border-[#e5e5e5] font-semibold text-[#1a1a1a] dark:border-[#1f1f1f] dark:text-[#ededed]"
 				style="transition-delay: 350ms;"
 			>
 				<a
@@ -140,21 +140,12 @@
 	}
 
 	.menuRendered li {
-		@apply w-full border-gray-200 dark:border-gray-600;
+		@apply w-full;
 		transform: translateX(0);
 		opacity: 1;
 	}
 
 	.menu > * + * {
 		margin-top: 24px;
-	}
-
-	@keyframes grow {
-		0% {
-			height: 0px;
-		}
-		100% {
-			height: 24px;
-		}
 	}
 </style>
