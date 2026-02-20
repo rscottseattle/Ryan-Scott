@@ -45,11 +45,11 @@ module.exports = {
 							'border-radius': '0rem',
 						},
 						'a:hover': {
-							color: '#1a1a1a !important',
-							textDecoration: 'none !important'
+							color: '#4bbeff !important',
+							textDecoration: 'underline !important'
 						},
 						a: {
-							color: '#737373',
+							color: '#4bbeff',
 							textDecoration: 'none'
 						},
 						'a code': {

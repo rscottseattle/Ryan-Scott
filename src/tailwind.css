@@ -88,21 +88,22 @@ pre {
 	}
 }
 
-/* Global link styles — animated underline */
+/* Global link styles */
 a {
-	color: #737373;
+	color: #4bbeff;
 	text-decoration: none;
 	transition: color 0.3s ease;
 }
 a:hover {
-	color: #1a1a1a;
-	text-decoration: none;
+	color: #4bbeff;
+	text-decoration: underline;
 }
 .dark a {
-	color: #999999;
+	color: #4bbeff;
 }
 .dark a:hover {
-	color: #ffffff;
+	color: #4bbeff;
+	text-decoration: underline;
 }
 
 /* Animated underline utility */
