@@ -97,6 +97,72 @@
 		</div>
 	</section>
 
+	<!-- Expandable Sections -->
+	<section class="w-full mb-16 space-y-4">
+		<details class="group border-0 border-b border-gray-200 dark:border-gray-700 p-0">
+			<summary class="flex cursor-pointer items-center gap-3 py-4 text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-gray-100 list-none">
+				<span class="flex h-6 w-6 items-center justify-center rounded-full border border-gray-400 dark:border-gray-500 text-gray-400 dark:text-gray-500 text-xs group-open:rotate-45 transition-transform">+</span>
+				Ministry & Speaking
+			</summary>
+			<div class="pb-6 pl-9 text-gray-600 dark:text-gray-400 leading-relaxed">
+				<p class="mb-3">Faith is at the center of everything I do. I preach and teach regularly, investing in the next generation of ministry leaders.</p>
+				<p>If you're looking for a speaker for your event, conference, or church — let's connect.</p>
+			</div>
+		</details>
+
+		<details class="group border-0 border-b border-gray-200 dark:border-gray-700 p-0">
+			<summary class="flex cursor-pointer items-center gap-3 py-4 text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-gray-100 list-none">
+				<span class="flex h-6 w-6 items-center justify-center rounded-full border border-gray-400 dark:border-gray-500 text-gray-400 dark:text-gray-500 text-xs group-open:rotate-45 transition-transform">+</span>
+				Want to Collaborate?
+			</summary>
+			<div class="pb-6 pl-9 text-gray-600 dark:text-gray-400 leading-relaxed">
+				<p class="mb-3">I'm always open to interesting projects at the intersection of faith, marketing, and technology.</p>
+				<ul class="list-disc pl-5 space-y-1">
+					<li>Consulting on AI and marketing strategy</li>
+					<li>Speaking engagements</li>
+					<li>Content partnerships</li>
+					<li>Ministry projects</li>
+				</ul>
+			</div>
+		</details>
+
+		<details class="group border-0 border-b border-gray-200 dark:border-gray-700 p-0">
+			<summary class="flex cursor-pointer items-center gap-3 py-4 text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-gray-100 list-none">
+				<span class="flex h-6 w-6 items-center justify-center rounded-full border border-gray-400 dark:border-gray-500 text-gray-400 dark:text-gray-500 text-xs group-open:rotate-45 transition-transform">+</span>
+				Favorite Books & Resources
+			</summary>
+			<div class="pb-6 pl-9 text-gray-600 dark:text-gray-400 leading-relaxed">
+				<p class="mb-3">A few books and resources that have shaped my thinking:</p>
+				<ul class="list-disc pl-5 space-y-1">
+					<li>Add your favorite books here</li>
+					<li>Add podcasts, newsletters, or tools you recommend</li>
+				</ul>
+			</div>
+		</details>
+
+		<details class="group border-0 border-b border-gray-200 dark:border-gray-700 p-0">
+			<summary class="flex cursor-pointer items-center gap-3 py-4 text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-gray-100 list-none">
+				<span class="flex h-6 w-6 items-center justify-center rounded-full border border-gray-400 dark:border-gray-500 text-gray-400 dark:text-gray-500 text-xs group-open:rotate-45 transition-transform">+</span>
+				What I'm Writing
+			</summary>
+			<div class="pb-6 pl-9 text-gray-600 dark:text-gray-400 leading-relaxed">
+				<p class="mb-3">I write about faith, marketing, AI, and building with purpose. Check out the latest on the <a href="/blog">blog</a>.</p>
+				<p>I'm also working on a book — more details coming soon.</p>
+			</div>
+		</details>
+
+		<details class="group border-0 border-b border-gray-200 dark:border-gray-700 p-0">
+			<summary class="flex cursor-pointer items-center gap-3 py-4 text-sm font-semibold uppercase tracking-wider text-gray-900 dark:text-gray-100 list-none">
+				<span class="flex h-6 w-6 items-center justify-center rounded-full border border-gray-400 dark:border-gray-500 text-gray-400 dark:text-gray-500 text-xs group-open:rotate-45 transition-transform">+</span>
+				More About Me
+			</summary>
+			<div class="pb-6 pl-9 text-gray-600 dark:text-gray-400 leading-relaxed">
+				<p class="mb-3">Based in Seattle. I'm a preacher, author, and consultant who believes technology should serve people, not the other way around.</p>
+				<p>When I'm not working, you'll find me spending time with family, reading, or exploring the Pacific Northwest.</p>
+			</div>
+		</details>
+	</section>
+
 	<!-- Latest Posts -->
 	<LatestPosts {items} />
 
