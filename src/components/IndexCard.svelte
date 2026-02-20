@@ -1,5 +1,4 @@
 <script>
-	// href={item.slug} title={item.data.title} date={item.data.date}
 	export let href = '#';
 	/** @type {import('$lib/types').ContentItem} */
 	export let item = undefined;
@@ -11,7 +10,7 @@
 </script>
 
 <a
-	class="w-full text-gray-900 hover:text-yellow-600 dark:text-gray-100 dark:hover:text-yellow-100 hover:no-underline"
+	class="w-full text-gray-900 hover:text-white dark:text-gray-100 dark:hover:text-white hover:no-underline"
 	{href}
 	><div class="w-full">
 		<div class="flex flex-col justify-between md:flex-row">
@@ -19,16 +18,14 @@
 				{title}
 			</h4>
 		</div>
-		<p class="text-gray-600 mb-2 break-all sm:break-words dark:text-gray-400 hover:text-yellow-600 dark:hover:text-yellow-100">
+		<p class="text-gray-600 mb-2 break-all sm:break-words dark:text-gray-400 hover:text-gray-300 dark:hover:text-gray-200">
 			<slot />
 		</p>
 		<div class="flex justify-between items-center gap-1 text-left text-gray-500 sm:justify-start sm:flex-row sm:gap-4 md:mb-0 md:text-sm">
-			<!-- {JSON.stringify(item.readingTime)} -->
 			<p>{stringData}</p>
 			{#if item?.readingTime}
 				<p class="hidden sm:inline-block">{item?.readingTime}</p>
 			{/if}
-			<!-- comment this in if you have multiple categories -->
 			<span class="px-4 max-h-6 flex items-center capitalize bg-gray-200 rounded-md dark:bg-gray-700 dark:text-gray-400">
 				{item?.category || 'note'}
 			</span>

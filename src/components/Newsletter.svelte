@@ -23,7 +23,7 @@
 
 <section class="mb-16 w-full" id="newsletter">
 	<div
-		class="my-4 w-full border-y border-blue-200 bg-blue-50 p-6 dark:border-gray-600 dark:bg-gray-800 sm:rounded sm:border-x"
+		class="my-4 w-full border-y border-gray-200 bg-gray-50 p-6 dark:border-gray-700 dark:bg-gray-800 sm:rounded sm:border-x"
 	>
 		<div class="flex items-center justify-between space-x-4 text-gray-900 dark:text-gray-100">
 			<p class="text-lg font-bold md:text-xl">Subscribe to the newsletter</p>
@@ -65,34 +65,31 @@
 		{#if isNewsletterOpen}
 			<p class="my-1 text-gray-800 dark:text-gray-200">
 				Get emails from me about <span class="font-bold"
-					>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, ducimus.</span
+					>faith, marketing, and building with purpose</span
 				>.
 			</p>
 
 			<form
 				class="relative my-4"
-				action="https://buttondown.email/api/emails/embed-subscribe/swyx"
+				action="https://buttondown.email/api/emails/embed-subscribe/ryanscott"
 				method="post"
 				target="popupwindow"
-				on:submit={() => toggleNewsletter() && window.open('https://buttondown.email/swyx', 'popupwindow')}
+				on:submit={() => toggleNewsletter() && window.open('https://buttondown.email/ryanscott', 'popupwindow')}
 			>
 				<input
 					type="email"
 					id="bd-email"
 					name="email"
 					aria-label="Email for newsletter"
-					placeholder="tim@apple.com"
+					placeholder="you@example.com"
 					autocomplete="email"
 					required={true}
-					class="mt-1 block w-full rounded-md border-gray-300 bg-white px-4 py-2 pr-32 text-gray-900 focus:border-blue-500 focus:ring-blue-500 dark:bg-gray-800 dark:text-gray-100"
+					class="mt-1 block w-full rounded-md border-gray-300 bg-white px-4 py-2 pr-32 text-gray-900 focus:border-gray-500 focus:ring-gray-500 dark:bg-gray-800 dark:text-gray-100"
 				/><button
 					class="absolute right-1 top-1 flex h-8 w-28 items-center justify-center rounded bg-gray-100 px-4 pt-1 font-medium text-gray-900 dark:bg-gray-700 dark:text-gray-100"
 					type="submit">Subscribe</button
 				>
 			</form>
-			<p class="text-sm text-gray-800 dark:text-gray-200">
-				5,432 subscribers including my Mom – <a href="/#newsletter">123 issues</a>
-			</p>
 		{/if}
 	</div>
 </section>

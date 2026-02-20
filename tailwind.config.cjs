@@ -12,9 +12,8 @@ module.exports = {
 				DEFAULT: {
 					css: {
 						'--tw-prose-bullets': theme('colors.black'),
-						// these customizations are explained here https://youtu.be/-FzemNMcOGs
 						blockquote: {
-							borderLeft: '3px solid red',
+							borderLeft: '3px solid #525252',
 							fontSize: 'inherit',
 							fontStyle: 'inherit',
 							fontWeight: 'medium'
@@ -38,11 +37,11 @@ module.exports = {
 							'border-radius': '0rem',
 						},
 						'a:hover': {
-							color: '#31cdce !important',
+							color: '#ffffff !important',
 							textDecoration: 'underline !important'
 						},
 						a: {
-							color: '#2071ad',
+							color: '#d4d4d4',
 							textDecoration: 'none'
 						},
 						'a code': {

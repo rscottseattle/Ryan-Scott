@@ -1,11 +1,35 @@
 <script>
-  import Readme from '../../../README.md'
+  import { SITE_TITLE } from '$lib/siteConfig';
 </script>
 
-SwyxKit is a blog template meant for frontend developers who want to get a performant, fully featured content site up and running with SvelteKit, Tailwind CSS, and other blog features (listed below).
+<svelte:head>
+  <title>About | {SITE_TITLE}</title>
+</svelte:head>
 
-Below is the full README.md you get from the github repo: https://github.com/sw-yx/swyxkit
+<div class="flex flex-col items-start justify-center max-w-2xl mx-auto px-4 sm:px-8 pb-16">
 
----
+# About Me
 
-<Readme />
+I'm Ryan Scott — a preacher, author, and marketing consultant based in Seattle. I sit at the intersection of faith, creativity, and technology.
+
+## What I Do
+
+I help organizations tell their story and reach the people who need to hear it. Whether that's through marketing strategy, AI-powered tools, or standing behind a pulpit — the work is always about connection.
+
+- **CMO at Apostolics at Sea** — leading marketing strategy and brand growth
+- **Founder of KonceptGenesis** — a marketing and AI consultancy
+- **Published Author** — more details coming soon
+- **AI & Marketing Consulting** — helping businesses leverage modern tools with purpose
+
+## Ministry
+
+Faith is the foundation of everything I do. I preach, teach, and invest in the next generation of ministry leaders. If you're looking for a speaker or collaborator on ministry projects, let's talk.
+
+## Connect With Me
+
+I'd love to hear from you. Reach out via email or find me on GitHub.
+
+- [GitHub](https://github.com/rscottseattle)
+- [Email](mailto:hello@ryanscott.dev)
+
+</div>

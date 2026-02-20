@@ -1,10 +1,8 @@
 <script>
 	import Newsletter from '../components/Newsletter.svelte';
-	import FeatureCard from '../components/FeatureCard.svelte';
 	import LatestPosts from '../components/LatestPosts.svelte';
 	import {
 		SITE_URL,
-		REPO_URL,
 		SITE_TITLE,
 		SITE_DESCRIPTION,
 		DEFAULT_OG_IMAGE,
@@ -28,61 +26,78 @@
 	<meta property="og:title" content={SITE_TITLE} />
 	<meta name="Description" content={SITE_DESCRIPTION} />
 	<meta property="og:description" content={SITE_DESCRIPTION} />
-	<meta property="og:image" content={DEFAULT_OG_IMAGE} />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:creator" content={'@' + MY_TWITTER_HANDLE} />
+	{#if DEFAULT_OG_IMAGE}
+		<meta property="og:image" content={DEFAULT_OG_IMAGE} />
+		<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
+	{/if}
+	{#if MY_TWITTER_HANDLE}
+		<meta name="twitter:card" content="summary" />
+		<meta name="twitter:creator" content={'@' + MY_TWITTER_HANDLE} />
+	{/if}
 	<meta name="twitter:title" content={SITE_TITLE} />
 	<meta name="twitter:description" content={SITE_DESCRIPTION} />
-	<meta name="twitter:image" content={DEFAULT_OG_IMAGE} />
 </svelte:head>
 
 <div
 	class="flex flex-col items-start justify-center max-w-2xl px-4 pb-16 mx-auto border-gray-200 dark:border-gray-700 sm:px-8"
 >
-	<div class="flex flex-col-reverse items-start sm:flex-row">
-		<div class="flex flex-col pr-8">
-			<h1 class="mb-3 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-				This is
-
-				<span
-					class="relative inline-block ml-2 before:absolute before:-inset-1 before:block before:-skew-y-3 before:bg-red-500"
-				>
-					<span class="relative text-yellow-400 skew-y-3">{SITE_TITLE}</span>
-				</span>
-				!
-			</h1>
-			<h2 class="mb-4 text-gray-700 dark:text-gray-200">
-				An opinionated blog starter for <span class="font-semibold"
-					>SvelteKit + Tailwind + Netlify/Vercel.</span
-				> Updated for
-				<a href="https://github.com/sveltejs/kit/"
-					>SvelteKit 1.0</a
-				>!
-			</h2>
-			<p class="mb-16 text-gray-600 dark:text-gray-400">
-				<a href={REPO_URL}>View source and feature list here!</a>
-			</p>
+	<!-- Hero Section -->
+	<div class="w-full py-12 sm:py-16">
+		<h1 class="mb-3 text-4xl font-bold tracking-tight text-black dark:text-white md:text-6xl">
+			Ryan Scott
+		</h1>
+		<h2 class="mb-6 text-xl text-gray-500 dark:text-gray-400 md:text-2xl">
+			Preacher. Author. Consultant.
+		</h2>
+		<p class="mb-8 text-gray-600 dark:text-gray-400 max-w-lg leading-relaxed">
+			I write about faith, marketing, and the intersection of technology with purpose-driven work.
+			Based in Seattle, building things that matter.
+		</p>
+		<div class="flex items-center space-x-5">
+			<a href="https://github.com/rscottseattle" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-white dark:text-gray-400 dark:hover:text-white no-underline hover:no-underline" aria-label="GitHub">
+				<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+					<path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd" />
+				</svg>
+			</a>
+			<a href="/blog" class="text-gray-500 hover:text-white dark:text-gray-400 dark:hover:text-white no-underline hover:no-underline" aria-label="Blog">
+				<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10a2 2 0 012 2v1m2 13a2 2 0 01-2-2V7m2 13a2 2 0 002-2V9a2 2 0 00-2-2h-2m-4-3H9M7 16h6M7 8h6v4H7V8z" />
+				</svg>
+			</a>
+			<a href="mailto:hello@ryanscott.dev" class="text-gray-500 hover:text-white dark:text-gray-400 dark:hover:text-white no-underline hover:no-underline" aria-label="Email">
+				<svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+					<path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+				</svg>
+			</a>
 		</div>
-		<!-- <div
-				class="w-[80px] h-[80px] rounded-full sm:w-[176px] sm:h-[136px] relative mb-8 sm:mb-0 mr-auto bg-cyan-300 bg-opacity-25"
-			/> -->
 	</div>
 
+	<!-- What I'm Working On -->
 	<section class="w-full mb-16">
-		<h3 class="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
-			Featured Posts
+		<h3 class="mb-6 text-2xl font-bold tracking-tight text-black dark:text-white md:text-3xl">
+			What I'm Working On
 		</h3>
-		<div class="flex flex-col gap-6 md:flex-row">
-			<FeatureCard title="Welcome to swyxkit 2022!" href="/welcome" stringData="Jan 2022" />
-			<FeatureCard
-				title="Moving to a GitHub CMS"
-				href="/moving-to-a-github-cms"
-				stringData="Jan 2022"
-			/>
-			<FeatureCard title="HTML Ipsum demo" href="/moo" stringData="Jan 2022" />
+		<div class="grid gap-4 sm:grid-cols-2">
+			<div class="rounded-lg border border-gray-200 dark:border-gray-700 p-5">
+				<h4 class="font-semibold text-gray-900 dark:text-gray-100 mb-1">Apostolics at Sea</h4>
+				<p class="text-sm text-gray-500 dark:text-gray-400">Chief Marketing Officer</p>
+			</div>
+			<div class="rounded-lg border border-gray-200 dark:border-gray-700 p-5">
+				<h4 class="font-semibold text-gray-900 dark:text-gray-100 mb-1">KonceptGenesis</h4>
+				<p class="text-sm text-gray-500 dark:text-gray-400">Marketing & AI Agency</p>
+			</div>
+			<div class="rounded-lg border border-gray-200 dark:border-gray-700 p-5">
+				<h4 class="font-semibold text-gray-900 dark:text-gray-100 mb-1">Published Author</h4>
+				<p class="text-sm text-gray-500 dark:text-gray-400">Book title coming soon</p>
+			</div>
+			<div class="rounded-lg border border-gray-200 dark:border-gray-700 p-5">
+				<h4 class="font-semibold text-gray-900 dark:text-gray-100 mb-1">Preaching & Ministry</h4>
+				<p class="text-sm text-gray-500 dark:text-gray-400">Faith-driven leadership</p>
+			</div>
 		</div>
 	</section>
 
+	<!-- Latest Posts -->
 	<LatestPosts {items} />
 
 	<Newsletter />
