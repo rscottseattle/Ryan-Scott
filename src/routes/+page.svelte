@@ -59,14 +59,22 @@
 			What I'm Working On
 		</h3>
 		<div class="grid gap-4 sm:grid-cols-2">
-			<div class="rounded-lg border border-[#e5e5e5] dark:border-[#1f1f1f] p-5">
+			<a href="https://apostolicsatsea.com" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-[#e5e5e5] dark:border-[#1f1f1f] p-5 hover:border-[#4bbeff] transition-colors hover:no-underline">
 				<h4 class="font-semibold text-[#1a1a1a] dark:text-[#ededed] mb-1">Apostolics at Sea</h4>
-				<p class="text-sm text-[#737373] dark:text-[#999999]">Chief Marketing Officer</p>
-			</div>
+				<p class="text-sm text-[#737373] dark:text-[#999999]">Assistant to Executive Producer</p>
+			</a>
 			<div class="rounded-lg border border-[#e5e5e5] dark:border-[#1f1f1f] p-5">
 				<h4 class="font-semibold text-[#1a1a1a] dark:text-[#ededed] mb-1">KonceptGenesis</h4>
-				<p class="text-sm text-[#737373] dark:text-[#999999]">Marketing & AI Agency</p>
+				<p class="text-sm text-[#737373] dark:text-[#999999]">Marketing & AI Consultant</p>
 			</div>
+			<a href="https://churchsetup.com" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-[#e5e5e5] dark:border-[#1f1f1f] p-5 hover:border-[#4bbeff] transition-colors hover:no-underline">
+				<h4 class="font-semibold text-[#1a1a1a] dark:text-[#ededed] mb-1">ChurchSetup</h4>
+				<p class="text-sm text-[#737373] dark:text-[#999999]">Founder</p>
+			</a>
+			<a href="https://thenexttown.com/" target="_blank" rel="noopener noreferrer" class="rounded-lg border border-[#e5e5e5] dark:border-[#1f1f1f] p-5 hover:border-[#4bbeff] transition-colors hover:no-underline">
+				<h4 class="font-semibold text-[#1a1a1a] dark:text-[#ededed] mb-1">Next Town Ministries</h4>
+				<p class="text-sm text-[#737373] dark:text-[#999999]">Church Planting</p>
+			</a>
 			<div class="rounded-lg border border-[#e5e5e5] dark:border-[#1f1f1f] p-5">
 				<h4 class="font-semibold text-[#1a1a1a] dark:text-[#ededed] mb-1">Published Author</h4>
 				<p class="text-sm text-[#737373] dark:text-[#999999]">Book title coming soon</p>
