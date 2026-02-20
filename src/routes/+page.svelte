@@ -114,12 +114,23 @@
 
 		<details class="group border-b border-[#e5e5e5] dark:border-[#1f1f1f]">
 			<summary class="flex cursor-pointer items-center justify-between py-5 text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] list-none select-none">
-				What I'm Writing
+				What I'm Thinking About
 				<span class="text-[#a3a3a3] dark:text-[#525252] text-lg leading-none transition-transform duration-300 group-open:rotate-45">+</span>
 			</summary>
 			<div class="accordion-content pb-8 text-[#737373] dark:text-[#999999] leading-relaxed">
-				<p class="mb-3">I write about faith, marketing, AI, and building with purpose. Check out the latest on the <a href="/blog" class="link-underline">blog</a>.</p>
-				<p>I'm also working on a book — more details coming soon.</p>
+				{#if items?.length}
+					<ul class="space-y-3">
+						{#each items.slice(0, 5) as item}
+							<li class="flex justify-between items-baseline gap-4">
+								<a href={item.slug} class="link-underline text-[#1a1a1a] dark:text-[#ededed]">{item.title}</a>
+								<span class="text-xs text-[#a3a3a3] dark:text-[#525252] whitespace-nowrap">{new Date(item.date).toISOString().slice(0, 10)}</span>
+							</li>
+						{/each}
+					</ul>
+					<a href="/blog" class="inline-block mt-4 text-sm link-underline">See all posts</a>
+				{:else}
+					<p>New writing coming soon. Stay tuned.</p>
+				{/if}
 			</div>
 		</details>
 
