@@ -157,6 +157,18 @@ article.prose h4::before {
 	content: '#### ';
 }
 
+/* Card frost hover effect */
+.card-frost {
+	transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+.card-frost:hover {
+	background-color: rgba(75, 190, 255, 0.06);
+	border-color: #4bbeff;
+}
+.dark .card-frost:hover {
+	background-color: rgba(75, 190, 255, 0.08);
+}
+
 /* Accordion content animation */
 details .accordion-content {
 	animation: fadeIn 0.3s ease;
