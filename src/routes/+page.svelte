@@ -41,6 +41,11 @@
 
 	<!-- Hero -->
 	<div class="w-full pt-16 pb-20 sm:pt-24 sm:pb-28">
+		<img
+			src="/profile.png"
+			alt="Ryan Scott"
+			class="mb-8 h-32 w-32 rounded-full object-cover sm:h-40 sm:w-40"
+		/>
 		<h1 class="mb-4 text-5xl font-bold tracking-tight text-[#1a1a1a] dark:text-[#ededed] md:text-7xl">
 			Ryan Scott
 		</h1>
@@ -177,6 +182,11 @@
 				<p>I'm known as <a href="https://www.brittaniscott.com/" target="_blank" rel="noopener noreferrer" class="link-underline">Brittani Scott</a>'s husband.</p>
 
 				<h4 class="text-xs font-semibold uppercase tracking-[0.2em] text-[#1a1a1a] dark:text-[#ededed] pt-2">My Family</h4>
+				<img
+					src="/family.png"
+					alt="The Scott Family"
+					class="my-4 w-full rounded-lg"
+				/>
 				<p>I'm a husband to <a href="https://www.brittaniscott.com/" target="_blank" rel="noopener noreferrer" class="link-underline">Brittani Scott</a> — singer, songwriter, recording artist, and worship leader. She's the talented one. I just married well.</p>
 				<p>We have two little girls: Asha and Yerrin. They are my pride and joy and the reason I drink coffee.</p>
 

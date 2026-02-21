@@ -29,18 +29,7 @@
 	dark:text-[#ededed] sm:pb-16"
 >
 	<a href="#skip" class="skip-nav">Skip to content</a>
-	<MobileMenu />
-	<ul class="ml-[-0.60rem] flex">
-		<li>
-			<NavLink href="/">Home</NavLink>
-		</li>
-		<li>
-			<NavLink href="/blog">Blog</NavLink>
-		</li>
-		<li>
-			<NavLink href="/about">About</NavLink>
-		</li>
-	</ul>
+	<div></div>
 	<div class="flex items-center">
 		<button
 			aria-label="Toggle Dark Mode"
